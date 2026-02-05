@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: x402-gateway
+    env: node
+    plan: free
+    buildCommand: "pnpm install && pnpm build --filter=@x402/facilitator"
+    startCommand: "cd packages/facilitator && pnpm start"
+    envVars:
+      - key: JWT_SECRET
+        generateValue: true
+      - key: PORT
+        value: "3002"
+      - key: MOCK_TRANSFERS
+        value: "true"
+      - key: NODE_ENV
+        value: "production"
