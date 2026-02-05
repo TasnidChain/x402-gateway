@@ -1,0 +1,9 @@
+{
+  "name": "x402-gateway",
+  "version": "1.0.0",
+  "description": "x402 Payment Protocol Gateway - USDC on Base",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "engines": {"node": ">=20.0.0"},
+  "packageManager": "pnpm@9"
+}

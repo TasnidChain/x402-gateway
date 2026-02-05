@@ -1,0 +1,22 @@
+
+> @x402/core@0.1.0 build /Users/rizqos/SDK/packages/core
+> tsup
+
+CLI Building entry: src/index.ts
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /Users/rizqos/SDK/packages/core/tsup.config.ts
+CLI Target: es2022
+CLI Cleaning output folder
+ESM Build start
+CJS Build start
+CJS dist/index.cjs     20.21 KB
+CJS dist/index.cjs.map 51.95 KB
+CJS ⚡️ Build success in 63ms
+ESM dist/index.js     18.45 KB
+ESM dist/index.js.map 51.91 KB
+ESM ⚡️ Build success in 63ms
+DTS Build start
+DTS ⚡️ Build success in 323ms
+DTS dist/index.d.ts  26.13 KB
+DTS dist/index.d.cts 26.13 KB

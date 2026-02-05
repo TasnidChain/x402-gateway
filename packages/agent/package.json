@@ -1,0 +1,52 @@
+{
+  "name": "@x402/agent",
+  "version": "0.1.0",
+  "description": "Autonomous AI agent client for x402 micropayments - headless wallet, budget controls, auto-402 handling",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "clean": "rm -rf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@x402/core": "workspace:*",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.1.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "keywords": [
+    "x402",
+    "agent",
+    "ai-agent",
+    "micropayments",
+    "usdc",
+    "base",
+    "autonomous",
+    "headless-wallet"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/x402/paywall.git",
+    "directory": "packages/agent"
+  }
+}

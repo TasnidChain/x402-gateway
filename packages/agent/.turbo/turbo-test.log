@@ -1,0 +1,32 @@
+
+> @x402/agent@0.1.0 test /Users/rizqos/SDK/packages/agent
+> vitest run
+
+
+ RUN  v1.6.1 /Users/rizqos/SDK/packages/agent
+
+ ✓ src/cache.test.ts  (18 tests) 8ms
+ ✓ src/budget.test.ts  (24 tests) 11ms
+ ✓ src/fetch.test.ts  (6 tests) 27ms
+stderr | src/fetch.test.ts > x402Fetch > should throw on invalid 402 response
+Failed to parse 402 response: SyntaxError: Unexpected token 'P', "Payment Required" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parseJSONFromBytes (node:internal/deps/undici/undici:4259:19)
+    at successSteps (node:internal/deps/undici/undici:6882:27)
+    at readAllBytes (node:internal/deps/undici/undici:5807:13)
+
+stderr | src/client.test.ts > X402AgentClient > fetch > should throw on invalid 402 response
+Failed to parse 402 response: SyntaxError: Unexpected token 'P', "Payment Required" is not valid JSON
+    at JSON.parse (<anonymous>)
+    at parseJSONFromBytes (node:internal/deps/undici/undici:4259:19)
+    at successSteps (node:internal/deps/undici/undici:6882:27)
+    at readAllBytes (node:internal/deps/undici/undici:5807:13)
+
+ ✓ src/client.test.ts  (13 tests) 35ms
+ ✓ src/wallet.test.ts  (6 tests) 28ms
+
+ Test Files  5 passed (5)
+      Tests  67 passed (67)
+   Start at  20:15:25
+   Duration  561ms (transform 142ms, setup 0ms, collect 1.02s, tests 109ms, environment 1ms, prepare 328ms)
+

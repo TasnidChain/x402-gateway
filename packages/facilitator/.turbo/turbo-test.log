@@ -1,0 +1,16 @@
+
+> @x402/facilitator@0.1.0 test /Users/rizqos/SDK/packages/facilitator
+> vitest run
+
+
+ RUN  v1.6.1 /Users/rizqos/SDK/packages/facilitator
+
+ ✓ tests/fee.test.ts  (7 tests) 2ms
+ ✓ tests/signature.test.ts  (10 tests) 10ms
+ ✓ tests/handler.test.ts  (8 tests) 11ms
+
+ Test Files  3 passed (3)
+      Tests  25 passed (25)
+   Start at  21:43:12
+   Duration  309ms (transform 59ms, setup 0ms, collect 282ms, tests 23ms, environment 0ms, prepare 115ms)
+
